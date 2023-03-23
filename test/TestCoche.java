@@ -16,7 +16,8 @@ public class TestCoche {
     @Test
     public void test_al_decelerar_un_coche_su_velocidad_disminuye (){
         Coche nuevoCoche = new Coche();
-        nuevoCoche.acelerar(30);
+        nuevoCoche.velocidad = 50;
+        nuevoCoche.decelerar(20);
         Assertions.assertEquals(30, nuevoCoche.velocidad);
     }
 }
